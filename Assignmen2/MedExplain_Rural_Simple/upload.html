@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Upload | MedExplain Rural</title>
+  <link rel="stylesheet" href="upload.css">
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to main content</a>
+  <div class="layout">
+
+    
+    <aside class="sidebar">
+      <a class="brand" href="index.html">MedExplain <span>Rural</span></a>
+      <nav aria-label="Main navigation">
+        <a href="index.html">Home</a>
+        <a href="upload.html" class="active" aria-current="page">Upload</a>
+        <a href="results.html">Results</a>
+        <a href="community.html">Community</a>
+      </nav>
+      <div class="sidebar-help">
+        <h2>Need help?</h2>
+        <p>Prepare a question for a health worker.</p>
+        <a href="community.html#questions">Write a question</a>
+      </div>
+    </aside>
+
+    
+    <main class="content" id="main">
+      <header class="page-top">
+        <p>Upload</p>
+      </header>
+
+      <section>
+        <p class="eyebrow">Step by step</p>
+        <h1>Upload your report</h1>
+        <p>Try the report selection layout, then explore a fictional sample explanation.</p>
+      </section>
+
+      <p class="notice"><strong>No file is uploaded.</strong> Use a practice file without personal details. This prototype cannot read, preview or analyze your file.</p>
+
+      
+      <nav class="step-links" aria-label="Upload steps">
+        <a href="#choose-file">1. Choose file</a>
+        <a href="#language">2. Language</a>
+        <a href="#confirm">3. Confirm</a>
+      </nav>
+
+      
+      <form action="results.html" method="get">
+        <section class="card" id="choose-file">
+          <h2>1. Choose a practice report</h2>
+          <div class="upload-grid">
+            <div class="file-box">
+              <label for="report">Select a photo or PDF</label>
+              
+              <input type="file" id="report" accept=".pdf,.jpg,.jpeg,.png,.webp" required>
+              <p class="small">Suggested formats: PDF, JPG, PNG or WEBP.</p>
+              <p class="small">Your browser shows the filename. There is no image preview.</p>
+            </div>
+            <aside class="photo-tips">
+              <h3>Tips for a clear photo</h3>
+              <ul>
+                <li>Use good lighting.</li>
+                <li>Keep the page flat.</li>
+                <li>Include all four corners.</li>
+                <li>Avoid shadows and glare.</li>
+              </ul>
+            </aside>
+          </div>
+        </section>
+
+        
+        <section class="card" id="language">
+          <h2>2. Language preference</h2>
+          <label for="report-language">Choose a language</label>
+          <select id="report-language">
+            <option>English</option>
+            <option>Urdu</option>
+            <option>Pashto</option>
+            <option>Punjabi</option>
+          </select>
+          <p class="small">This is a layout example only. The sample results remain in English.</p>
+        </section>
+
+        <section class="card" id="confirm">
+          <h2>3. Open the sample results</h2>
+          <p>Everyone sees the same demonstration values. The next page is not an analysis of the file you selected.</p>
+          
+          <div class="actions">
+            <button class="button" type="submit">View sample results</button>
+            <button class="button secondary" type="reset">Clear selection</button>
+          </div>
+          <p class="small">Select a file and tick the checkbox before continuing.</p>
+        </section>
+      </form>
+
+      
+      <footer>
+        <p>MedExplain Rural. A classroom prototype, not a substitute for a doctor.</p>
+        <a href="index.html#about">About</a>
+        <a href="index.html#privacy">Privacy</a>
+      </footer>
+    </main>
+  </div>
+</body>
+</html>

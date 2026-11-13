@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Community | MedExplain Rural</title>
+  
+  <link rel="stylesheet" href="community.css">
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to main content</a>
+  <div class="layout">
+
+    
+    <aside class="sidebar">
+      <a class="brand" href="index.html">MedExplain <span>Rural</span></a>
+      <nav aria-label="Main navigation">
+        <a href="index.html">Home</a>
+        <a href="upload.html">Upload</a>
+        <a href="results.html">Results</a>
+        <a href="community.html" class="active" aria-current="page">Community</a>
+      </nav>
+      <div class="sidebar-help">
+        <h2>Need help?</h2>
+        <p>Prepare a question for a health worker.</p>
+        <a href="community.html#questions">Write a question</a>
+      </div>
+    </aside>
+
+    
+    <main class="content" id="main">
+      <header class="page-top">
+        <p>Community</p>
+      </header>
+
+      <section>
+        <p class="eyebrow">Learn together</p>
+        <h1>Community health tips</h1>
+        <p>Example reading for families, caregivers and community health workers.</p>
+      </section>
+      <nav class="topic-links" aria-label="Health topics">
+        <a href="#nutrition">Nutrition</a>
+        <a href="#mother-child">Mother &amp; Child</a>
+        <a href="#diabetes">Diabetes</a>
+        <a href="#first-aid">First aid</a>
+      </nav>
+
+      <div class="community-grid">
+        <div>
+          <article class="card tip" id="nutrition">
+            <img src="nutrition.png" alt="Illustration of foods for a varied diet" width="210" height="168">
+            <div>
+              <p class="eyebrow">Nutrition</p>
+              <h2>Eating for iron</h2>
+              <p>Learn about everyday foods that contain iron and why a varied diet matters.</p>
+              <details>
+                <summary>Read more</summary>
+                <p>Beans, lentils, meat and leafy vegetables can contribute iron to meals. A health professional can advise you if an iron deficiency is suspected.</p>
+              </details>
+            </div>
+          </article>
+
+          <article class="card tip" id="mother-child">
+            <img src="mother-child.png" alt="Illustration of a parent and child" width="210" height="168">
+            <div>
+              <p class="eyebrow">Mother &amp; Child</p>
+              <h2>Safe pregnancy basics</h2>
+              <p>Keep appointments, discuss symptoms early, and take medicines only as advised.</p>
+              <details>
+                <summary>Read more</summary>
+                <p>Regular prenatal visits support the health of parent and baby. Seek prompt clinical care for severe or concerning symptoms.</p>
+              </details>
+            </div>
+          </article>
+
+          <article class="card tip" id="diabetes">
+            <img src="diabetes.png" alt="Illustration of a blood sugar meter" width="210" height="168">
+            <div>
+              <p class="eyebrow">Diabetes</p>
+              <h2>Understanding blood sugar</h2>
+              <p>See why test timing, meals and medical context matter when reading glucose values.</p>
+              <details>
+                <summary>Read more</summary>
+                <p>A fasting glucose test and a non-fasting test measure glucose under different conditions. Ask a clinician what your test was intended to assess.</p>
+              </details>
+            </div>
+          </article>
+
+          <article class="card tip" id="first-aid">
+            <img src="first-aid.png" alt="Illustration of a first aid box" width="210" height="168">
+            <div>
+              <p class="eyebrow">First aid</p>
+              <h2>Burns: first steps</h2>
+              <p>Simple safety reminders and when it is important to seek medical attention.</p>
+              <details>
+                <summary>Read more</summary>
+                <p>Cool a minor thermal burn under cool running water and avoid home remedies. Severe burns or burns involving the face, hands or major joints need urgent professional care.</p>
+              </details>
+            </div>
+          </article>
+          <p class="small">General educational content, not individual medical advice.</p>
+        </div>
+
+        <aside>
+          <section class="card">
+            <h2>Find a clinic</h2>
+            <p>Choose a district to search on an external map.</p>
+            <form action="https://www.google.com/maps/search/" method="get" target="_blank" rel="noopener noreferrer">
+              <input type="hidden" name="api" value="1">
+              <label for="district">District</label>
+              <select id="district" name="query">
+                <option value="clinics in Islamabad Pakistan">Islamabad</option>
+                <option value="clinics in Rawalpindi Pakistan">Rawalpindi</option>
+                <option value="clinics in Karachi Pakistan">Karachi</option>
+              </select>
+              <button class="button" type="submit">Search on Google Maps</button>
+            </form>
+            <p class="small">Opens a new tab and requires internet. Clinic details are not verified by this website.</p>
+          </section>
+
+          <section class="card" id="questions">
+            <h2>Prepare a question</h2>
+            <p>This writing space does not send or save your question.</p>
+            <form action="community.html#questions" method="get">
+              <label for="question">What would you like to ask?</label>
+              <textarea id="question" rows="5" placeholder="Write your question here..."></textarea>
+              <button class="button secondary" type="reset">Clear question</button>
+            </form>
+            <p class="small">Copy your text manually before leaving this page.</p>
+          </section>
+        </aside>
+      </div>
+
+      <footer>
+        <p>MedExplain Rural. A classroom prototype, not a substitute for a doctor.</p>
+        <a href="index.html#about">About</a>
+        <a href="index.html#privacy">Privacy</a>
+      </footer>
+    </main>
+  </div>
+</body>
+</html>
